@@ -2,7 +2,7 @@
 
 A fun and interactive platform to practice developer interview questions with cute animals! Built with Node.js, Express, MongoDB, and EJS.
 
-![Dev-Pet Screenshot](public/img/dev-kitty-ui.png)
+![Dev-Pet Screenshot](public/img/dev-pet-ui.png)
 
 ## 🌟 Features
 
@@ -90,7 +90,7 @@ Dev-Pet/
 │   ├── index.ejs          # Main page
 │   └── edit.ejs           # Edit question page
 ├── models/                # Database models
-│   └── devkittyq.js       # Question model
+│   └── devpetq.js         # Question model
 ├── server.js              # Main server file
 ├── package.json           # Dependencies and scripts
 ├── .env                   # Environment variables
@@ -126,7 +126,7 @@ Dev-Pet/
 
 ### Environment Variables
 ```env
-DATABASE_URL="mongodb+srv://username:password@cluster.mongodb.net/DevKitty"
+DATABASE_URL="mongodb+srv://username:password@cluster.mongodb.net/DevPet"
 PORT=4000
 ```
 

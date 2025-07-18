@@ -1,5 +1,5 @@
 {
-  "name": "dev-kitty",
+  "name": "dev-pet",
   "version": "1.0.0",
   "description": "Practice dev interview questions",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JesacaLin/dev-kitty.git"
+    "url": "git+https://github.com/karanmittal09/Dev-Pet-learning-platform.git"
   },
-  "author": "Jesaca Lin",
+  "author": "Karan Mittal",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JesacaLin/dev-kitty/issues"
+    "url": "https://github.com/karanmittal09/Dev-Pet-learning-platform/issues"
   },
-  "homepage": "https://github.com/JesacaLin/dev-kitty#readme",
+  "homepage": "https://github.com/karanmittal09/Dev-Pet-learning-platform#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
