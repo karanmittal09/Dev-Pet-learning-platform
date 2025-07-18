@@ -1,7 +1,7 @@
-//Declare variables 
+//Declare variables
 const express = require("express") //returns a function reference, that function is called with express()
 const app = express() //app is an object returned by express();
-const PORT = process.env.PORT || 3000; //setting up the listening port
+const PORT = process.env.PORT || 4000; //setting up the listening port
 const MongoClient = require('mongodb').MongoClient;
 // const mongoose = require('mongoose')
 // const DevKittyQ = require('./models/DevKittyQ') //DevKittyQ is where the mongoose models live
@@ -11,18 +11,15 @@ let db,
 dbConnectionStr = process.env.DATABASE_URL,
 dbName = 'DevKitty';
 
-try {
-  const mongoAtlasLogin = require('./.env/config.js');
-  dbConnectionStr = process.env.DATBASE_URL 
-} catch(error) {
-  console.error(error)
-}
-
 MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
   .then(client => {
       console.log(`Connected to ${dbName} Database`)
       db = client.db(dbName)
-})
+  })
+  .catch(error => {
+      console.error('Failed to connect to MongoDB:', error)
+      process.exit(1)
+  })
 
 //Set middleware
 app.set("view engine", "ejs") //establishing our view engine and ask it to use ejs
@@ -53,5 +50,5 @@ app.post('/', (req, res) => {
 
 
 
-app.listen(PORT, () => console.log(`http://localhost:3000`)) //helps to initialize the server
+app.listen(PORT, () => console.log(`http://localhost:${PORT}`)) //helps to initialize the server
 
