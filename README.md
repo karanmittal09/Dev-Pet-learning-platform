@@ -2,7 +2,7 @@
 
 A fun and interactive platform to practice developer interview questions with cute animals! Built with Node.js, Express, MongoDB, and EJS.
 
-![Dev-Pet Screenshot](public/img/dev-kitty-ui.jpg)
+![Dev-Pet Screenshot](public/img/dev-kitty-ui.png)
 
 ## 🌟 Features
 
